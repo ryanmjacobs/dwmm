@@ -1,4 +1,5 @@
-var video = document.getElementById("#video");
+var video = document.getElementById("video");
+var title = document.getElementById("title");
 video.pause();
 
 function fadeIn() {
@@ -8,16 +9,15 @@ function fadeOut() {
     video.classList.add("video-off");
 };
 
-var setClickHook = function() {
-    video.onclick = function() {
-        if (video.paused) {
-            video.play();
-            fadeIn();
-        } else {
-            fadeOut();
-            video.pause();
-        }
-    };
+video.onclick = function() {
+    video.play();
+    fadeIn();
+};
+
+title.onclick = function() {
+    video.play();
+    fadeIn();
+    this.style.display = "none";
 };
 
 /* TODO: wait for some buffering to happen first -- show loading stuff
@@ -26,5 +26,3 @@ setInterval(function() {
     console.log(p);
 }, 300);
 */
-
-setTimeout(setClickHook, 1000);
