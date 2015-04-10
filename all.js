@@ -9,11 +9,6 @@ function fadeOut() {
     video.classList.add("video-off");
 };
 
-video.onclick = function() {
-    video.play();
-    fadeIn();
-};
-
 title.onclick = function() {
     video.play();
     fadeIn();
