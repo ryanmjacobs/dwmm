@@ -2,8 +2,10 @@ var button = document.getElementById("#button");
 var video  = document.getElementById("#video");
 
 function fadeIn() {
+    video.classList.remove("video-off");
 }
 function fadeOut() {
+    video.classList.add("video-off");
 }
 
 video.onclick = function() {
@@ -15,3 +17,5 @@ video.onclick = function() {
         video.pause();
     }
 };
+
+video.pause();
