@@ -24,7 +24,7 @@ html, body {
     transition: opacity 0.5s ease-in-out;
 }
 
-.video-off { opacity: 0.03; }
+.video-off { opacity: 0; }
 
 /* 1. No object-fit support: */
 @media (min-aspect-ratio: 16/9) {
