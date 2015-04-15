@@ -2,16 +2,17 @@ var video = document.getElementById("video");
 var title = document.getElementById("title");
 
 function fadeIn() {
-    video.classList.remove("video-off");
+    video.classList.remove("video-fade");
+    this.style.display = "none";
 };
 function fadeOut() {
-    video.classList.add("video-off");
+    video.classList.add("video-fade");
+    this.style.display = "block";
 };
 
 title.onclick = function() {
     video.play();
     fadeIn();
-    this.style.display = "none";
 };
 
 video.onended = function() {
