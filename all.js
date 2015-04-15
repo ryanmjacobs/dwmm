@@ -16,7 +16,7 @@ title.onclick = function() {
 
 video.onended = function() {
     fadeOut();
-    vidoe.pause();
+    video.pause();
     video.currentTime = 0;
 }
 
