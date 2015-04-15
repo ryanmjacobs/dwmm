@@ -3,11 +3,11 @@ var title = document.getElementById("title");
 
 function fadeIn() {
     video.classList.remove("video-fade");
-    this.style.display = "none";
+    title.style.display = "none";
 };
 function fadeOut() {
     video.classList.add("video-fade");
-    this.style.display = "block";
+    title.style.display = "block";
 };
 
 title.onclick = function() {
