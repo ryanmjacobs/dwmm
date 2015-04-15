@@ -9,13 +9,14 @@ html, body {
     font-family: "Rock Salt", serif;
 }
 
-h1 {
+a#title {
     margin-top: 30vh;
     font-size: 4vw;
     text-align: center;
     transition: color 0.2s ease-in-out;
+    display: block;
 }
-h1:hover {
+a#title:hover {
     cursor: pointer;
     color: red;
 }
