@@ -1,6 +1,5 @@
 var video = document.getElementById("video");
 var title = document.getElementById("title");
-video.pause();
 
 function fadeIn() {
     video.classList.remove("video-off");
