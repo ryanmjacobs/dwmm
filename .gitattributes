@@ -1,1 +1,3 @@
 *.mp4 filter=lfs -crlf
+michael_360p.mp4 filter=lfs -crlf
+michael_720p.mp4 filter=lfs -crlf
